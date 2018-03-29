@@ -4,5 +4,33 @@ body {
 }
 
 a {
-  color: #00B7FF;
+  color: #00B7AA;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+ul li {float: left;}
+
+ul li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+ul li a:hover:not(.active) {background-color: grey;}
+
+ul li a.active {background-color: #4CAF50;}
+
+ul li.right {float: right;}
+
+@media screen and (max-width: 600px){
+  ul li.right,
+  ul li {float: none;}
 }

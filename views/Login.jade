@@ -11,15 +11,29 @@ html
                     #navbar-main.navbar-collaspe.collaspe
                         ul.nav.navbar-nav
                             li
-                                a(href='/login/') Login
+                                a(href='/Login/') Login
                             li
                                 a(href='/notes/') Notes
                             li
-                                a(href='/Edit Note') Edit Note
+                                a(href='/editor') Edit Note
 
 
         .container
         block content
+            .row.page-header
+                .col-lg-12
+                    h1 Login
+                    .row
+                        .col-xs-12.col-md-6
+                            form.form-horizontal(action="/location", method="get", role="form")
+                                .form-group
+                                    label.col-xs-10.col-sm-2.control-label(for="username") Username
+                                    .col-xs-12.col-sm-10
+                                        input#name.form-control(name="username")
+                                .form-group
+                                    label.col-xs-10.col-sm-2.control-label(for="password") Password
+                                    .col-xs-12.col-sm-10
+                                        input#name.form-control(name="password")
 
 
             footer
