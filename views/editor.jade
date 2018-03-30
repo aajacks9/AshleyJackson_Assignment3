@@ -20,6 +20,17 @@ html
 
     .container
     block content
+      form.form-horizontal(action="/location", method="get", role="form")
+                .form-group
+                  label.col-xs-10.col-sm-2.control-label(for="title") type here...
+                  .col-xs-12.col-sm-10
+                    input#name.form-control(name="title")
+                .form-group
+                  label.col-xs-10.col-sm-2.control-label(for="note") Note
+                  .col-sm-10
+                    textarea#note.form-control(name="note", rows="10")
+                button.btn.btn-default.pull-right save
+            .col-xs-12.col-md-4
 
 
       footer
